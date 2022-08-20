@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Dictionary.css"
 export default function Dictionary(){
+    let [word , setWord] = useState(null)
+    function handleSubmit(event){
+      event.preventDefault();
+      alert(`searching  ${word}`)
+    }
+
+    function handleChange(event){
+        setWord(event.target.value);
+    }
     return(
-        <header><img src="https://www.dictionary.shecodes.io/static/media/logo.951ad035.png" alt="shecodeslogo" className="img-fluid shecodeslogo"/></header>
+
+        <form className="mt-4" onSubmit={handleSubmit}>
+            <input type='search' className="form-control" autoFocus placeholder="Enter a word..." onChange={handleChange} />
+        </form>
      
     )
 }
