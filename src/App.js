@@ -5,7 +5,7 @@ function App() {
   return (
     <div className='container'>
       <header><img src="https://www.dictionary.shecodes.io/static/media/logo.951ad035.png" alt="shecodeslogo" className="img-fluid shecodeslogo"/></header>
-<Dictionary />
+<Dictionary defaultWord="wine"/>
 </div>
   );
 }
