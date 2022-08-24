@@ -13,6 +13,7 @@ import "./Responses.css";
     <h3>{props.results.word}</h3>
    </div>
    <div>
+
       {props.results.meanings.map(function(meaning , index) {
         return <div key={index}>
           <Meanings meaning={meaning} />
