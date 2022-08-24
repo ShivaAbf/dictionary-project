@@ -1,9 +1,12 @@
 import React from "react";
 import Meanings from "./Meanings";
-import "./Responses.css"
+import Synonyms from "./Synonyms";
+import "./Responses.css";
+
+
 
  export default function Responses(props){
-   console.log(props.results.meanings)
+  console.log(props.results)
   if(props.results){
     return(
       <div>
@@ -12,7 +15,10 @@ import "./Responses.css"
    </div>
    <div>
       {props.results.meanings.map(function(meaning , index) {
-        return <div key={index}><Meanings meaning={meaning} /></div>
+        return <div key={index}>
+          <Meanings meaning={meaning} />
+          <Synonyms synonyms={meaning.synonyms} />
+             </div>
        })} 
    </div>
    </div>
