@@ -1,0 +1,9 @@
+.img-div{
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border-radius: 8px;
+    max-height: 300px;
+}

@@ -1,0 +1,9 @@
+.phonetic{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.phonetic p{
+    font-size: 15px;
+    font-weight: bolder;
+}

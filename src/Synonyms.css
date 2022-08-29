@@ -1,0 +1,22 @@
+.synonyms{
+    display: flex;
+    justify-content: flex-start;
+}
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+    padding: 5px;
+}
+
+.synonyms p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.synonyms small{
+    font-weight: 500;
+    color: rgb(48, 48, 48);
+}
