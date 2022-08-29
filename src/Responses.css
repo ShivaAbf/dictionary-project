@@ -1,4 +1,14 @@
 .word-info{
     margin-top: 20px;
-    text-align: center;
+   color: rgb(62, 61, 61);
+}
+.word-info h3{
+    font-weight: 800px;
+    font-size: 50px;
+}
+
+section{
+    background-color: white;
+    margin: 40px 0px;
+    border-radius: 8px;
 }
